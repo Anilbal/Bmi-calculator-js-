@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    gap:150px;
+    background-color: #212121;
+    color: #fff;
+}
+.main{
+    margin-top: 120px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.button{
+    margin-top: 30px;
+    margin-left: 50px;
+    height: 30px;
+    width: 100px;
+    font-size: large;
+    text-transform: capitalize;
+}
+.result{
+    margin-top: 40px;
+}
+.last{
+    margin-top: 40px;
+}
