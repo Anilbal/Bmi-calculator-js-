@@ -11,7 +11,14 @@ button.addEventListener('click',(e)=>{
         result.innerHTML=`please enter a valid weight`
     }else{
         const bmi=(weight/((height*height)/10000)).toFixed(2)
-        result.innerHTML=`<span>${bmi}</span>`
+        if(bmi<18.6){
+            result.innerHTML=`<span>${bmi} under weight</span>`
+        }else if(bmi>18.6 && bmi<24.9){
+            result.innerHTML=`<span>${bmi} normal range</span>`
+        }else{
+            result.innerHTML=`<span>${bmi} over weight</span>`
+        }
     }
+    
     
 })
